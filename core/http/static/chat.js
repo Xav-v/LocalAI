@@ -182,7 +182,7 @@ function readInputImage() {
       let dataDone = false;
       const arr = value.split("\n");
       arr.forEach((data) => {
-        if (data.length === 0) return;
+        if (data.length <= 6) return;
         if (data.startsWith(":")) return;
         if (data === "data: [DONE]") {
           dataDone = true;
